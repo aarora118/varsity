@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Learning Concierge</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="chat-container">
+    <div id="chat-header">
+      <span id="chat-title" role="heading" aria-level="1">Your Learning Concierge</span>
+      <div>
+        <button id="chat-minimize" title="Minimize" aria-label="Minimize Chat">_</button>
+        <button id="chat-close" title="Close" aria-label="Close Chat">&times;</button>
+      </div>
+    </div>
+    <div id="chat-messages" role="log" aria-live="polite">
+      <div class="typing-indicator" style="display: none;">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <form id="chat-form" autocomplete="off">
+      <label for="user-input" class="visually-hidden">Your message</label>
+      <input type="text" id="user-input" name="user-input" placeholder="Type your message..." autocomplete="off" required aria-label="Chat input" />
+      <button id="send-button" type="submit" aria-label="Send Message">Send</button>
+    </form>
+  </div>
+  <script src="chatbot.js"></script>
+</body>
+</html> 
